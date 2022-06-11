@@ -469,7 +469,7 @@ ECHO Checking for forge/minecraft binaries...
 ECHO INFO: Checking for forge/minecraft binaries... 1>>  "%~dp0logs\serverstart.log" 2>&1
 
 REM Check if forge is already installed
-IF NOT EXIST "%~dp0*forge*%MC_SERVER_FORGEVER%*universal*.jar" (
+IF NOT EXIST "%~dp0*forge*%MC_SERVER_FORGEVER%.jar" (
 	ECHO FORGE %MC_SERVER_FORGEVER% binary not found, re-installing...
 	ECHO INFO: FORGE %MC_SERVER_FORGEVER% not found, re-installing... 1>>  "%~dp0logs\serverstart.log" 2>&1
 	GOTO INSTALLSTART
